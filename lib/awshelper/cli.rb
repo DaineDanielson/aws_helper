@@ -151,7 +151,7 @@ def snap_email(to, from, email_server, subject='EBS Backups')
   rows = 20
   rows = options[:rows] if options[:rows]
   owner = {}
-  owner = {:owner, options[:owner]} if options[:owner]
+  owner = :owner, options[:owner] if options[:owner]
   message = ""
   log("Report on snapshots")
   # ({ Name="start-time", Values="today in YYYY-MM-DD"})
